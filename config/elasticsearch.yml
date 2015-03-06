@@ -6,3 +6,4 @@ path:
 html:
   cors:
     enabled: true
+    allow-origin: *
