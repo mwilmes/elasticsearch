@@ -3,7 +3,11 @@ path:
   logs: /data/log
   plugins: /data/plugins
   work: /data/work
-html:
+http:
   cors:
     enabled: true
-    allow-origin: *
+    allow-origin: "*"
+    allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+    allow-headers: X-Requested-With, X-Auth-Token, Content-Type, Content-Length
+  jsonp:
+    enable: true
